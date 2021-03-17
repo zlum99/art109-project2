@@ -1,0 +1,120 @@
+body {
+  font-family: 'Oswald', sans-serif;
+  margin: 2em;
+  background-image: url("images/shopbackground.jpg");
+}
+
+h1 {
+  font-family: 'Fascinate', cursive;
+  color: #DCDCDC;
+  font-size: 60px;
+}
+
+title {
+  text-align: center;
+  font-size: 30px;
+}
+
+.imagegroup {
+  width: 48%;
+  color: #fff;
+  display: inline-block;
+  padding-bottom: 30px;
+  text-align: center;
+  font-style: italic;
+  position: relative;
+}
+
+.gallery {
+  width: 85vw;
+  margin: 0 auto;
+}
+
+.leftside {
+  float: left;
+  left: -200px;
+  bottom: 0px;
+}
+
+.middle {
+  float: none;
+  bottom: 0px;
+  left: -350px;
+}
+
+.rightside {
+  float: right;
+  right: -200px;
+  bottom: 500px;
+}
+
+.text {
+  font-size: 50px;
+  color: #FFFFFF;
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+}
+
+.welcome {
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  color: #fff;
+  font-size: 30px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-right: 400px;
+  margin-left: 400px;
+}
+
+.description {
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  color: #fff;
+  font-size: 30px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-right: 400px;
+  margin-left: 400px;
+}
+
+a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+/* navigation */
+footer {
+  color: #fff;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  padding: 30px;
+  font-size: 2em;
+  text-align: center;
+  left: -20px;
+  font-family: 'Oswald', sans-serif;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.effect:hover {
+  color: #A9A9A9;
+  transition: 0.5s;
+  text-decoration: none;
+}
+
+/* ID's */
+#gg {
+  border-radius: 50%;
+}
+
+#grove {
+  border-radius: 50%;
+}
+
+#wcc {
+  border-radius: 50%;
+}
