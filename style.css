@@ -2,12 +2,12 @@
 body {
   font-family: 'Oswald', sans-serif;
   margin: 2em;
-  background-image: url("images/LA.jpg");
+  /* background-image: url("images/LA.jpg"); */
 }
 
 h1 {
   font-family: 'Fascinate', cursive;
-  color: #373fff;
+  color: #ffffff;
   font-size: 60px;
 }
 
@@ -71,4 +71,15 @@ h1 {
   display: block;
   width: 0px;
   margin-left: 525px;
+}
+
+/* ID's */
+
+#background {
+margin: 0;
+padding: 0;
+width: 100%;
+height: 100vh;
+position: fixed;
+z-index: -999;
 }

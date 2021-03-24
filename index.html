@@ -16,11 +16,18 @@
   <link href="https://fonts.googleapis.com/css2?family=Fascinate&display=swap" rel="stylesheet">
 
   <!-- import the webpage's javascript file -->
-  <script src="/script.js" defer></script>
+  <script src="p5.js"></script>
+  <script src="p5.sound.js"></script>
+  <script src="p5.clickable.js"></script>
+  <script src="three.r119.min.js"></script>
+  <script src="vanta.waves.min.js"></script>
+
 </head>
 
 
 <body>
+
+  <div id="background"></div>
 
   <header>
     <center>
@@ -42,6 +49,7 @@
         <div class="text">Attractions</div>
       </div>
     </a>
+  <script src="sketch.js"></script>
 
     <a href="food.html">
       <div class="imagegroup middle">
@@ -67,6 +75,18 @@
 
   </div>
 
+  <script>
+  VANTA.WAVES({
+    el: "#background",
+    mouseControls: true,
+    touchControls: true,
+    gyroControls: false,
+    minHeight: 200.00,
+    minWidth: 200.00,
+    scale: 1.00,
+    scaleMobile: 1.00
+  })
+  </script>
 
 </body>
 
