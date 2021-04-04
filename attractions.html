@@ -18,7 +18,7 @@
   <!-- import the webpage's javascript file -->
   <script src="/script.js" defer></script>
   <script src="three.r119.min.js"></script>
-  <script src="vanta.waves.min.js"></script>
+  <script src="vanta.fog.min.js"></script>
 </head>
 
 <body>
@@ -38,7 +38,7 @@
   <div class="gallery">
     <a href="attraction1.html">
       <div class="imagegroup leftside">
-        <img src="images/Disneyland.jpg" width="400" height="400" id="Disneyland">
+        <img src="images/castle.jpg" width="400" height="400" id="Disneyland">
         <div class="text">Disneyland Resort</div>
       </div>
     </a>
@@ -67,17 +67,17 @@
   </footer>
 
   <script>
-    VANTA.WAVES({
-      el: "#background",
-      mouseControls: true,
-      touchControls: true,
-      gyroControls: false,
-      minHeight: 200.00,
-      minWidth: 200.00,
-      scale: 1.00,
-      scaleMobile: 1.00,
-      color: 0xf820b
-    })
+  VANTA.FOG({
+    el: "#background",
+    mouseControls: true,
+    touchControls: true,
+    gyroControls: false,
+    minHeight: 200.00,
+    minWidth: 200.00,
+    highlightColor: 0x245c00,
+    midtoneColor: 0xff3c,
+    lowlightColor: 0x8e48
+  })
   </script>
 
 </body>

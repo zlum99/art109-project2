@@ -9,7 +9,7 @@
   <title>Disneyland Resort</title>
 
   <!-- import the webpage's stylesheet -->
-  <link rel="stylesheet" type="text/css" href="style2.css" >
+  <link rel="stylesheet" type="text/css" href="style2.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -18,11 +18,11 @@
   <!-- import the webpage's javascript file -->
   <script src="/script.js" defer></script>
   <script src="three.r119.min.js"></script>
-  <script src="vanta.waves.min.js"></script>
+  <script src="vanta.fog.min.js"></script>
 </head>
 
 <body>
-    <div id="background"></div>
+  <div id="background"></div>
 
   <header>
     <center>
@@ -33,6 +33,24 @@
   <div class="welcome">
     <p>Welcome to the Happiest Place on Earth!</p>
   </div>
+
+  <div class="container">
+    <figure>
+      <img src="images/Disneyland.jpg" alt="" id="mainImg">
+    </figure>
+
+    <div class="thumb_img_list">
+      <ul>
+        <li><img src="images/Disneyland.jpg" alt="" id="thumb1"></li>
+        <li><img src="images/Disneyland2.jpg" alt="" id="thumb2"></li>
+        <li><img src="images/Disneyland3.jpg" alt="" id="thumb3"></li>
+        <li><img src="images/Disneyland4.jpg" alt="" id="thumb4"></li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="custom.js"></script>
+
 
   <center>
     <iframe width="760" height="515" src="https://www.youtube.com/embed/gTDTiAjIv_E" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -54,16 +72,16 @@
   </footer>
 
   <script>
-    VANTA.WAVES({
+    VANTA.FOG({
       el: "#background",
       mouseControls: true,
       touchControls: true,
       gyroControls: false,
       minHeight: 200.00,
       minWidth: 200.00,
-      scale: 1.00,
-      scaleMobile: 1.00,
-      color: 0xf820b
+      highlightColor: 0x245c00,
+      midtoneColor: 0xff3c,
+      lowlightColor: 0x8e48
     })
   </script>
 

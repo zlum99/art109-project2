@@ -18,7 +18,7 @@
   <!-- import the webpage's javascript file -->
   <script src="/script.js" defer></script>
   <script src="three.r119.min.js"></script>
-  <script src="vanta.waves.min.js"></script>
+  <script src="vanta.fog.min.js"></script>
 </head>
 
 <body>
@@ -34,8 +34,24 @@
     <p>One of the best bakeries in LA!</p>
   </div>
 
+  <div class="container">
+    <figure>
+      <img src="images/portos.jpg" alt="" id="mainImg">
+    </figure>
+
+    <div class="thumb_img_list">
+      <ul>
+        <li><img src="images/portos.jpg" alt="" id="thumb1"></li>
+        <li><img src="images/portos2.jpg" alt="" id="thumb2"></li>
+        <li><img src="images/portos3.jpg" alt="" id="thumb3"></li>
+        <li><img src="images/portos4.jpg" alt="" id="thumb4"></li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="custom.js"></script>
+
   <center>
-    <img src="images/portos.jpg" width="760" height="515">
     <<iframe width="760" height="515" src="https://www.youtube.com/embed/kiJFGSTJl8I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </center>
 
@@ -54,18 +70,16 @@
   </center>
 
   <script>
-VANTA.WAVES({
+  VANTA.FOG({
   el: "#background",
   mouseControls: true,
   touchControls: true,
   gyroControls: false,
   minHeight: 200.00,
   minWidth: 200.00,
-  scale: 1.00,
-  scaleMobile: 1.00,
-  color: 0x8c2828
+  highlightColor: 0xff0000
 })
-</script>
+  </script>
 
 </body>
 

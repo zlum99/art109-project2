@@ -1,18 +1,22 @@
+
+
 body {
   font-family: 'Oswald', sans-serif;
-  margin: 2em;
+  margin: 0;
 }
 
 h1 {
   font-family: 'Fascinate', cursive;
   color: white;
   font-size: 60px;
+  margin: 0;
 }
 
 title {
   text-align: center;
   font-size: 30px;
 }
+
 
 .imagegroup {
   width: 48%;
@@ -103,6 +107,52 @@ footer a {
   color: #006400;
   transition: 0.5s;
   text-decoration: none;
+}
+
+/* Image Gallery */
+*,*:after,*:before{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+img{
+	max-width: 100%;
+}
+.container{
+	padding: 40px 0;
+}
+figure{
+	max-width: 800px;
+	margin: 0 auto 40px;
+	border:2px solid #fff;
+}
+figure img{
+	max-width: 100%;
+	min-width: 100%;
+	display: block;
+}
+
+.thumb_img_list{
+  text-align: center;
+}
+.thumb_img_list ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.thumb_img_list ul li{
+  display: inline-block;
+  border:1px solid #fff;
+  width: 100px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.thumb_img_list ul li img {
+  display: block;
 }
 
 /* ID's */

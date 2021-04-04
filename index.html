@@ -9,7 +9,7 @@
   <title>Los Angeles</title>
 
   <!-- import the webpage's stylesheet -->
-  <link rel="stylesheet" type="text/css" href="style.css" >
+  <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -17,17 +17,25 @@
 
   <!-- import the webpage's javascript file -->
   <script src="p5.js"></script>
-  <script src="p5.sound.js"></script>
+  <script src="p5.min.js"></script>
   <script src="p5.clickable.js"></script>
   <script src="three.r119.min.js"></script>
-  <script src="vanta.waves.min.js"></script>
-
+  <script src="vanta.fog.min.js"></script>
 </head>
 
 
 <body>
+  <section>
+    <video src="videos/LA Video.mp4" autoplay="" muted="" loop=""></video>
+  </section>
 
-  <div id="background"></div>
+  <script type="text/javascript">
+    let video = document.querySelector('video');
+    window.addEventListener('scroll', function() {
+      let value = 1 + window.scrollY / -600;
+      video.style.opacity = value;
+    })
+  </script>
 
   <header>
     <center>
@@ -49,7 +57,6 @@
         <div class="text">Attractions</div>
       </div>
     </a>
-  <script src="sketch.js"></script>
 
     <a href="food.html">
       <div class="imagegroup middle">
@@ -67,6 +74,12 @@
 
   </div>
 
+    <br>
+    <br>
+    <br>
+    <br>
+
+
   <div class="centerImage">
 
     <iframe width="760" height="515" src="https://www.airpano.com/embed.php?3D=los-angeles-california-usa" frameborder="0" marginheight="0" marginwidth="0" scrolling="no" framespacing="0" allowfullscreen></iframe> <br> <br>
@@ -75,18 +88,6 @@
 
   </div>
 
-  <script>
-  VANTA.WAVES({
-    el: "#background",
-    mouseControls: true,
-    touchControls: true,
-    gyroControls: false,
-    minHeight: 200.00,
-    minWidth: 200.00,
-    scale: 1.00,
-    scaleMobile: 1.00
-  })
-  </script>
 
 </body>
 
