@@ -2,7 +2,7 @@
 body {
   font-family: 'Oswald', sans-serif;
   margin: 0;
-  background-color: #00C1FF;
+  background-image: linear-gradient(silver, red, green);
 }
 
 h1 {
