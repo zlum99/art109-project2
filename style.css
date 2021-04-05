@@ -39,7 +39,6 @@ section video {
   height: 100%;
   object-fit: cover;
   pointer-events: none;
-
 }
 
 .title {
@@ -99,13 +98,15 @@ section video {
   margin-right: 400px;
   margin-left: 400px;
   background-color: #A8D5BAFF;
-  box-shadow:  5px 10px;
+  box-shadow: 5px 10px;
 }
 
 .centerImage {
   display: block;
-  width: 0px;
-  margin-left: 525px;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  float: none;
 }
 
 /* Tilt Hover Effect */
@@ -116,7 +117,7 @@ section video {
   align-items: center;
   flex-direction: column;
   padding: 30px 0;
-  transform-style:  preserve-3d;
+  transform-style: preserve-3d;
 }
 
 .container2 .box {
@@ -126,11 +127,11 @@ section video {
   margin: 10px 0;
   background: #000;
   background: #000;
-  transform-style:  preserve-3d;
+  transform-style: preserve-3d;
 }
 
 .container2 .box:hover {
-  box-shadow: 0 50px 80px rgba(0,0,0,.2);
+  box-shadow: 0 50px 80px rgba(0, 0, 0, .2);
 }
 
 .container2 .box .imgBx {
@@ -151,7 +152,7 @@ section video {
   padding: 40px 25px;
   transform-origin: top;
   transition: 0.5s;
-  transform-style:  preserve-3d;
+  transform-style: preserve-3d;
 }
 
 .container2 .box:hover .contentBx {
@@ -159,14 +160,13 @@ section video {
 }
 
 /* ID's */
-
 #background {
-margin: auto;
-padding: 0;
-width: 100%;
-height: 100vh;
-position: fixed;
-z-index: -999;
+  margin: auto;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: -999;
 }
 
 #text {
@@ -175,10 +175,10 @@ z-index: -999;
   border-width: medium;
 }
 
-
 /* Buttons */
 .button {
-  background-color: #4CAF50; /* Green */
+  background-color: #4CAF50;
+  /* Green */
   border: none;
   color: white;
   padding: 16px 32px;
