@@ -18,9 +18,7 @@
   <!-- import the webpage's javascript file -->
   <script src="p5.js"></script>
   <script src="p5.min.js"></script>
-  <script src="p5.clickable.js"></script>
   <script src="three.r119.min.js"></script>
-  <script src="vanta.fog.min.js"></script>
 </head>
 
 
@@ -49,35 +47,57 @@
     </p>
   </div>
 
-  <div class="gallery">
-
+  <div class="imagegroup leftside">
     <a href="attractions.html">
-      <div class="imagegroup leftside">
-        <img src="https://cdn.glitch.com/a2813135-3dba-4083-a8e3-2392d6265303%2FAttractions.png?v=1614131167270" width="300" height="300">
-        <div class="text">Attractions</div>
+      <div class="container2">
+        <div class="box">
+          <div class="imgBx">
+            <img src="images/attractions.jpg" width="450" height="300">
+          </div>
+        </div>
       </div>
     </a>
-
-    <a href="food.html">
-      <div class="imagegroup middle">
-        <img src="https://cdn.glitch.com/a2813135-3dba-4083-a8e3-2392d6265303%2Ffood.png?v=1614132171801" width="300" height="300">
-        <div class="text">Food</div>
-      </div>
-    </a>
-
-    <a href="shopping.html">
-      <div class="imagegroup rightside">
-        <img src="images/shopping.png" width="300" height="300">
-        <div class="text">Shopping</div>
-      </div>
-    </a>
-
+    <h2>Attractions</h2>
   </div>
 
-    <br>
-    <br>
-    <br>
-    <br>
+  <div class="imagegroup middle">
+    <a href="food.html">
+      <div class="container2">
+        <div class="box">
+          <div class="imgBx">
+            <img src="images/food.jpg" width="450" height="300">
+          </div>
+        </div>
+      </div>
+    </a>
+    <h2>Food</h2>
+  </div>
+
+  <div class="imagegroup rightside">
+    <a href="shopping.html">
+      <div class="container2">
+        <div class="box">
+          <div class="imgBx">
+            <img src="images/Shopping.jpg" width="450" height="300">
+          </div>
+        </div>
+      </div>
+    </a>
+    <h2>Shopping</h2>
+  </div>
+
+  <script type="text/javascript" src="vanilla-tilt.js"></script>
+  <script type="text/javascript">
+    VanillaTilt.init(document.querySelectorAll(".box"), {
+      max: 25,
+      speed: 400
+    });
+  </script>
+
+  <br>
+  <br>
+  <br>
+  <br>
 
 
   <div class="centerImage">

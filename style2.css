@@ -12,11 +12,15 @@ h1 {
   margin: 0;
 }
 
+h2 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 30px;
+}
+
 title {
   text-align: center;
   font-size: 30px;
 }
-
 
 .imagegroup {
   width: 48%;
@@ -35,20 +39,17 @@ title {
 
 .leftside {
   float: left;
-  left: -200px;
-  bottom: 0px;
+  width: 33%;
 }
 
 .middle {
+  width: 33%;
   float: none;
-  bottom: 0px;
-  left: -350px;
 }
 
 .rightside {
   float: right;
-  right: -200px;
-  bottom: 475px;
+  width: 33%;
 }
 
 .text {
@@ -67,6 +68,8 @@ title {
   margin-bottom: 100px;
   margin-right: 400px;
   margin-left: 400px;
+  background-color: #808000;
+  box-shadow:  5px 10px;
 }
 
 .description {
@@ -78,6 +81,8 @@ title {
   margin-bottom: 100px;
   margin-right: 400px;
   margin-left: 400px;
+  background-color: #808000;
+  box-shadow:  5px 10px;
 }
 
 a:visited {
@@ -153,6 +158,56 @@ figure img{
 
 .thumb_img_list ul li img {
   display: block;
+}
+
+/* Tilt Hover Effect */
+.container2 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px 0;
+  transform-style:  preserve-3d;
+}
+
+.container2 .box {
+  position: relative;
+  width: 450px;
+  height: 300px;
+  margin: 60px 0;
+  background: #000;
+  background: #000;
+  transform-style:  preserve-3d;
+}
+
+.container2 .box:hover {
+  box-shadow: 0 50px 80px rgba(0,0,0,.2);
+}
+
+.container2 .box .imgBx {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.container2 .box .contentBx {
+  position: absolute;
+  top: 50%;
+  left: 50px;
+  right: 50px;
+  background: #fff;
+  transform: translateZ(20px) scaleY(0);
+  padding: 40px 25px;
+  transform-origin: top;
+  transition: 0.5s;
+  transform-style:  preserve-3d;
+}
+
+.container2 .box:hover .contentBx {
+  transform: translate(30px) scaleY(1);
 }
 
 /* ID's */

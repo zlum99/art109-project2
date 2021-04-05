@@ -37,27 +37,52 @@
     </p>
   </div>
 
-  <div class="gallery">
+  <div class="imagegroup leftside">
     <a href="shopping1.html">
-      <div class="imagegroup leftside">
-        <img src="images/glendale.jpg" width="400" height="400" id="gg">
-        <div class="text">Glendale Galleria</div>
-      </div>
-    </a>
-    <a href="shopping2.html">
-      <div class="imagegroup middle">
-        <img src="images/grove.jpg" width="400" height="400" id="grove">
-        <div class="text">The Grove</div>
-      </div>
-    </a>
-    <a href="shopping3.html">
-      <div class="imagegroup rightside">
-        <img src="images/westfield.jpg" width="400" height="400" id="wcc">
-        <div class="text">Westfield Century City</div>
-      </div>
-    </a>
+        <div class="container2">
+          <div class="box">
+            <div class="imgBx">
+              <img src="images/glendale.jpg" width="450" height="300">
+            </div>
+          </div>
+        </div>
+      </a>
+      <h2>Glendale Galleria</h2>
   </div>
 
+  <div class="imagegroup middle">
+  <a href="shopping2.html">
+      <div class="container2">
+        <div class="box">
+          <div class="imgBx">
+            <img src="images/grove.jpg" width="450" height="300">
+          </div>
+        </div>
+      </div>
+    </a>
+      <h2>The Grove</h2>
+  </div>
+
+  <div class="imagegroup rightside">
+    <a href="shopping3.html">
+      <div class="container2">
+        <div class="box">
+          <div class="imgBx">
+            <img src="images/westfield.jpg" width="450" height="300">
+          </div>
+        </div>
+      </div>
+    </a>
+      <h2>Westfield Century City</h2>
+  </div>
+
+  <script type="text/javascript" src="vanilla-tilt.js"></script>
+  <script type="text/javascript">
+    VanillaTilt.init(document.querySelectorAll(".box"), {
+      max: 25,
+      speed: 400
+    });
+  </script>
 
   <footer>
     <center>
